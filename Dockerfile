@@ -13,7 +13,7 @@ ARG app_dependencies="python3 py3-pip exiftool coreutils tzdata curl py3-certifi
 ARG build_dependencies="git"
 # Fix tzlocal to 2.1 due to Python 3.8 being default in alpine 3.13.5
 ARG python_dependencies="pytz tzlocal==2.1 wheel"
-ARG app_repo="icloud-photos-downloader/icloud_photos_downloader"
+ARG app_repo="GT-CK/icloud_photos_downloader"
 
 RUN echo "$(date '+%d/%m/%Y - %H:%M:%S') | ***** BUILD STARTED FOR ICLOUDPD ${container_version} *****" && \
 echo "$(date '+%d/%m/%Y - %H:%M:%S') | Install build dependencies" && \
